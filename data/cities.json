@@ -1,0 +1,122 @@
+{
+  "North": [
+    {
+      "name": "Chandigarh",
+      "famousPlaces": [
+        "Sukhna Lake",
+        "Rock Garden",
+        "Rose Garden",
+        "Elante Mall",
+        "Zakir Hussain Rose Garden",
+        "Chhatbir Zoo",
+        "Government Museum and Art Gallery",
+        "Terraced Garden",
+        "Punjab University Campus"
+      ]
+    },
+    {
+      "name": "Delhi",
+      "famousPlaces": [
+        "Red Fort",
+        "Qutub Minar",
+        "India Gate",
+        "Lotus Temple",
+        "Akshardham Temple",
+        "Humayun’s Tomb",
+        "Jama Masjid",
+        "Raj Ghat",
+        "National Museum"
+      ]
+    }
+  ],
+  "South": [
+    {
+      "name": "Bengaluru",
+      "famousPlaces": [
+        "Lalbagh",
+        "Cubbon Park",
+        "Bangalore Palace",
+        "ISKCON Temple",
+        "Bannerghatta National Park",
+        "Vidhana Soudha",
+        "Ulsoor Lake",
+        "Jawaharlal Nehru Planetarium",
+        "Wonderla Amusement Park"
+      ]
+    },
+    {
+      "name": "Chennai",
+      "famousPlaces": [
+        "Marina Beach",
+        "Fort St. George",
+        "Kapaleeshwarar Temple",
+        "Santhome Cathedral",
+        "Government Museum",
+        "Vivekananda House",
+        "Guindy National Park",
+        "Edward Elliot's Beach",
+        "Valluvar Kottam"
+      ]
+    }
+  ],
+  "East": [
+    {
+      "name": "Kolkata",
+      "famousPlaces": [
+        "Victoria Memorial",
+        "Howrah Bridge",
+        "Dakshineswar Temple",
+        "Indian Museum",
+        "Belur Math",
+        "Eden Gardens",
+        "Science City",
+        "St. Paul's Cathedral",
+        "Kalighat Temple"
+      ]
+    },
+    {
+      "name": "Bhubaneswar",
+      "famousPlaces": [
+        "Lingaraj Temple",
+        "Udayagiri Caves",
+        "Nandankanan Zoo",
+        "Rajarani Temple",
+        "Mukteshwar Temple",
+        "Khandagiri Caves",
+        "Ekamra Kanan",
+        "Odisha State Museum",
+        "Biju Patnaik Park"
+      ]
+    }
+  ],
+  "West": [
+    {
+      "name": "Mumbai",
+      "famousPlaces": [
+        "Gateway of India",
+        "Marine Drive",
+        "Elephanta Caves",
+        "Chhatrapati Shivaji Maharaj Terminus",
+        "Juhu Beach",
+        "Haji Ali Dargah",
+        "Siddhivinayak Temple",
+        "Film City",
+        "Sanjay Gandhi National Park"
+      ]
+    },
+    {
+      "name": "Jaipur",
+      "famousPlaces": [
+        "Hawa Mahal",
+        "Amber Fort",
+        "City Palace",
+        "Jantar Mantar",
+        "Jal Mahal",
+        "Nahargarh Fort",
+        "Albert Hall Museum",
+        "Birla Mandir",
+        "Galta Ji Temple"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+@startuml
+
+entity User {
+  * userId : String
+  * userName : String
+}
+
+entity Trip {
+  * tripId : String
+  * userId : String
+  * region : String
+  * city : String
+  * startDate : String
+  * endDate : String
+  * budget : double
+}
+
+entity City {
+  * name : String
+  * region : String
+}
+
+entity Place {
+  * placeId : String
+  * cityName : String
+  * placeName : String
+}
+
+entity Itinerary {
+  * itineraryId : String
+  * tripId : String
+  * day : int
+  * activity : String
+}
+
+User ||--o{ Trip : "plans"
+City ||--o{ Place : "has"
+Trip ||--o{ Itinerary : "includes"
+Trip }o--|| City : "occurs in"
+Place }o--|| Trip : "visited in"
+
+@enduml

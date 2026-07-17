@@ -1,0 +1,172 @@
+@startuml
+class TripManager {
+- {static} Scanner scanner
++ {static} Trip createTrip()
+}
+
+
+class AdminDashboard {
+- {static} Scanner sc
++ {static} void adminDashboard()
+}
+
+
+class AdminDashboard$MyStack {
+- Node top
++ <<Create>> MyStack()
++ void push(String)
++ String pop()
++ boolean isEmpty()
+}
+note top of AdminDashboard$MyStack
+ Manual Stack class for demonstration
+end note
+
+
+
+class AdminDashboard$MyStack$Node {
+~ String data
+~ Node next
+~ <<Create>> Node(String)
+}
+
+
+class FileManager {
+- {static} String FILE_PATH
+- {static} Gson gson
++ {static} void saveTrip(Trip)
++ {static} List<Trip> readAllTrips()
++ {static} Trip readTripById(String)
++ {static} void updateTripById(String,Trip)
++ {static} void deleteTripById(String)
+- {static} void writeTripsToFile(List<Trip>)
+}
+
+
+class ItineraryGenerator {
+- {static} DateTimeFormatter FORMATTER
++ {static} void generateItinerary(Trip)
+}
+
+
+class ItineraryGenerator$Node {
+~ String data
+~ Node next
+~ <<Create>> Node(String)
+}
+note top of ItineraryGenerator$Node
+ Manual Node class for Linked List
+end note
+
+
+
+class ItineraryGenerator$MyLinkedList {
+- Node head
+- int size
+~ <<Create>> MyLinkedList()
++ void add(String)
++ String get(int)
++ int size()
+}
+
+
+class Trip {
+- String userId
+- String userName
+- String region
+- String city
+- String startDate
+- String endDate
+- double budget
++ <<Create>> Trip()
++ <<Create>> Trip(String,String,String,String,String,String,double)
++ String getUserId()
++ void setUserId(String)
++ String getUserName()
++ void setUserName(String)
++ String getRegion()
++ void setRegion(String)
++ String getCity()
++ void setCity(String)
++ String getStartDate()
++ void setStartDate(String)
++ String getEndDate()
++ void setEndDate(String)
++ double getBudget()
++ void setBudget(double)
++ String toString()
+}
+note left of Trip::startDate
+ format: DD/MM/YYYY
+end note
+
+note left of Trip::Trip()
+ Default constructor (required for JSON deserialization)
+end note
+note right of Trip::getUserId()
+ Getters and Setters
+end note
+
+class Main {
++ {static} void main(String[])
+}
+
+class CityData {
+- {static} String CITY_FILE
+- {static} Map<String,List<City>> regionCityMap
+- {static} void loadCityData()
++ {static} void printCitiesByRegion(String)
++ {static} List<String> getFamousPlaces(String,String)
+}
+
+
+class CityData$City {
+- String name
+- List<String> famousPlaces
++ String getName()
++ List<String> getFamousPlaces()
+}
+
+
+class Dashboard {
+- {static} Scanner scanner
++ {static} void userDashboard()
+}
+
+
+class Dashboard$MyQueue {
+- Node front
++ <<Create>> MyQueue()
++ void enqueue(String)
++ String dequeue()
++ boolean isEmpty()
+}
+note top of Dashboard$MyQueue
+ Manual Queue class for demonstration
+end note
+
+
+
+class Dashboard$MyQueue$Node {
+~ String data
+~ Node next
+~ <<Create>> Node(String)
+}
+
+
+class CityDataLoader {
+- {static} String CITY_FILE
++ {static} List<String> getPlacesForCity(String)
+}
+
+
+
+
+AdminDashboard +.. AdminDashboard$MyStack
+AdminDashboard$MyStack +.. AdminDashboard$MyStack$Node
+ItineraryGenerator +.. ItineraryGenerator$Node
+ItineraryGenerator +.. ItineraryGenerator$MyLinkedList
+CityData +.. CityData$City
+Dashboard +.. Dashboard$MyQueue
+Dashboard$MyQueue +.. Dashboard$MyQueue$Node
+@enduml

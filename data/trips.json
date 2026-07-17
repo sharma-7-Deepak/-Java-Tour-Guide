@@ -1,0 +1,31 @@
+[
+  {
+    "userId": "a0048468",
+    "userName": "dilpreet",
+    "region": "North",
+    "city": "Delhi",
+    "startDate": "11/11/2025",
+    "endDate": "14/11/2025",
+    "budget": 5000.0
+  },
+  {
+    "userId": "f92d8b32",
+    "userName": "aryan",
+    "region": "East",
+    "city": "Kolkata",
+    "startDate": "11/12/2025",
+    "endDate": "12/12/2025",
+    "budget": 5000.0
+  },
+  {
+    "userId": "38aa4456",
+    "userName": "Deepak Sharma ji",
+    "region": "North",
+    "city": "Chandigarh",
+    "startDate": "23/11/2025",
+    "endDate": "25/11/2025",
+    "budget": 10000.0
+  }
+
+
+]
